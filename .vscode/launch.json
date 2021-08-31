@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+   {
+    "name": "Debug Main Process",
+    "type": "node",
+    "request": "launch",
+    "cwd": "${workspaceFolder}",
+    "port": 5858,
+    "timeout": 30000,
+    "sourceMaps": true,
+    "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+    "windows": {
+      "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+    },
+    "args":[
+      "${workspaceRoot}/dist/electron/main.js",
+      "--remote-debugging-port=5858" //Set debugging port for renderer process
+   ],
+   "protocol":"inspector" //Specify to use v8 inspector protocol
+  }
+  ]
+}
