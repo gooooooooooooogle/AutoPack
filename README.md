@@ -39,6 +39,7 @@ build过程中，若nsis、nsis-resources等依赖包无法下载导致构建失
   并替换至C:\Users\Administrator\AppData\Local\electron-builder\cache下，具体操作如下：
 
   (1)将下载后的nsis-3.0.4.1文件夹放入/cache/nsis文件夹下
+  
   (2)将下载后的nsis-resources-3.4.1文件夹放入/cache/nsis文件夹下
 * 2.不能更改下载后的两个文件夹名称，文件夹名称必须和报错中提到的文件名称一致。若不一致，请手动修改一致。
 * 3.最终目录结构如下：至此，应该可以build成功了。
